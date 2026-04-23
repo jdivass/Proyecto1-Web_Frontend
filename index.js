@@ -70,7 +70,39 @@ const renderSerie = (serie) => {
     serieCard.appendChild(genre);
     serieCard.appendChild(platform);
     serieCard.appendChild(status);    
-
-    
     container.appendChild(serieCard);
 }
+
+loadSeries()
+
+document.getElementById("next_page").addEventListener("click", () => {
+    actualPage++
+    loadSeries()
+})
+
+document.getElementById("prev_page").addEventListener("click", () => {
+    actualPage--
+    loadSeries()
+})
+
+document.getElementById("search").addEventListener("input", () => {
+    searchTerm = document.getElementById("search").value
+    actualPage = 1
+    loadSeries()
+})
+
+document.getElementById("atributes").addEventListener("change", () => {
+    sortAtribute = document.getElementById("atributes").value
+    actualPage = 1
+    loadSeries()
+})
+
+document.getElementById("order").addEventListener("change", () => {
+    orderMethod = document.getElementById("order").value
+    actualPage = 1
+    loadSeries()
+})
+
+document.getElementById("add_series").addEventListener("click", () => {
+    window.location.href = "form.html"
+})
