@@ -1,5 +1,5 @@
 
-const API_URL = "http://localhost:8080";
+const API_URL = "https://proyecto1-web-backend-production.up.railway.app";
 
 async function getSeries(page = 1, limit = 10, q = "", sort = "id", order = "desc") {
     const res = await fetch(`${API_URL}/series?page=${page}&limit=${limit}&q=${q}&sort=${sort}&order=${order}`);
