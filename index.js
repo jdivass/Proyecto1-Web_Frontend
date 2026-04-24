@@ -1,5 +1,5 @@
 var actualPage = 1
-var limitPage = 10
+var limitPage = 3
 var searchTerm = ""
 var sortAtribute = document.getElementById("atributes").value
 var orderMethod = document.getElementById("order").value
@@ -44,7 +44,7 @@ const loadSeries = async () => {
 const renderSerie = (serie) => {
     const serieCard = document.createElement('a')
     const container = document.getElementById("series_container");
-    serieCard.href = `series.html?id=${serie.id}`
+    serieCard.href = `serie.html?id=${serie.id}`
 
     const img = document.createElement(`img`)
     img.src = serie.image_path
