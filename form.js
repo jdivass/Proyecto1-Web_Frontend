@@ -21,7 +21,7 @@ const loadForm = async () => {
 
         if (serie.image_path) {
             const preview = document.getElementById("image_preview")
-            preview.src = `${API_URL}/${serie.image_path}`
+            preview.src = serie.image_path
             preview.style.display = "block"
         }
     }

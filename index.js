@@ -1,5 +1,5 @@
 var actualPage = 1
-var limitPage = 3
+var limitPage = 4
 var searchTerm = ""
 var sortAtribute = document.getElementById("atributes").value
 var orderMethod = document.getElementById("order").value
@@ -47,6 +47,7 @@ const renderSerie = (serie) => {
     serieCard.href = `serie.html?id=${serie.id}`
 
     const img = document.createElement(`img`)
+    console.log(serie.image_path)
     img.src = serie.image_path
     img.alt = serie.title
     img.style.width = "300px"
