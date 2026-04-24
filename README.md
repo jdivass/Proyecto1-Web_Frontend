@@ -59,7 +59,18 @@ http://localhost:8080/
 const API_URL = "http://localhost:8080";
 ```
 
-### 4. Abrir index.html en el navegador
+### 4. Levantar un servidor local
+
+```bash
+cd tu-repo-frontend
+python3 -m http.server 
+```
+
+Luego abre en el navegador:
+
+http://localhost:8000
+
+### 5. Abrir index.html en el navegador
 
 No se necesita ningún build ni servidor adicional.
 
