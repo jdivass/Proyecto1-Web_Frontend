@@ -52,7 +52,7 @@ async function createSerie(data) {
         formData.append("image", data.image);
     }
 
-    const res = await fetch(`${API_URL}/series/`, {
+    const res = await fetch(`${API_URL}/series`, {
         method: "POST",
         body: formData
     });
